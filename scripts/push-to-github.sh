@@ -14,6 +14,8 @@ if ! gh auth status >/dev/null 2>&1; then
   exit 1
 fi
 
+gh auth setup-git
+
 USER="$(gh api user -q .login)"
 REMOTE="https://github.com/${USER}/${REPO_NAME}.git"
 
