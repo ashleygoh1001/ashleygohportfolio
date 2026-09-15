@@ -1,0 +1,32 @@
+[
+  {
+    "id": "research",
+    "label": "research & interviewing",
+    "y": 0.1
+  },
+  {
+    "id": "synthesis",
+    "label": "synthesis",
+    "y": 0.26
+  },
+  {
+    "id": "prototyping",
+    "label": "prototyping",
+    "y": 0.42
+  },
+  {
+    "id": "systems",
+    "label": "systems thinking",
+    "y": 0.58
+  },
+  {
+    "id": "teaching",
+    "label": "teaching",
+    "y": 0.74
+  },
+  {
+    "id": "building",
+    "label": "building",
+    "y": 0.9
+  }
+]

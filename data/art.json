@@ -1,0 +1,508 @@
+[
+  {
+    "id": "art-0",
+    "category": "art",
+    "label": "watercolor study 1",
+    "start": "2017-01",
+    "weight": 0.25,
+    "detail": {
+      "medium": "watercolor",
+      "hours": 2
+    },
+    "leadsTo": [
+      "prototyping"
+    ]
+  },
+  {
+    "id": "art-1",
+    "category": "art",
+    "label": "ink study 2",
+    "start": "2018-02",
+    "weight": 0.37,
+    "detail": {
+      "medium": "ink",
+      "hours": 5
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "art-2",
+    "category": "art",
+    "label": "charcoal study 3",
+    "start": "2019-03",
+    "weight": 0.49,
+    "detail": {
+      "medium": "charcoal",
+      "hours": 8
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "art-3",
+    "category": "art",
+    "label": "digital study 4",
+    "start": "2020-04",
+    "weight": 0.61,
+    "detail": {
+      "medium": "digital",
+      "hours": 11
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "art-4",
+    "category": "art",
+    "label": "collage study 5",
+    "start": "2021-05",
+    "weight": 0.73,
+    "detail": {
+      "medium": "collage",
+      "hours": 14
+    },
+    "leadsTo": [
+      "prototyping"
+    ]
+  },
+  {
+    "id": "art-5",
+    "category": "art",
+    "label": "printmaking study 6",
+    "start": "2022-06",
+    "weight": 0.25,
+    "detail": {
+      "medium": "printmaking",
+      "hours": 17
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "art-6",
+    "category": "art",
+    "label": "watercolor study 7",
+    "start": "2023-07",
+    "weight": 0.37,
+    "detail": {
+      "medium": "watercolor",
+      "hours": 20
+    },
+    "leadsTo": [
+      "synthesis"
+    ]
+  },
+  {
+    "id": "art-7",
+    "category": "art",
+    "label": "ink study 8",
+    "start": "2024-08",
+    "weight": 0.49,
+    "detail": {
+      "medium": "ink",
+      "hours": 23
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "art-8",
+    "category": "art",
+    "label": "charcoal study 9",
+    "start": "2017-09",
+    "weight": 0.61,
+    "detail": {
+      "medium": "charcoal",
+      "hours": 2
+    },
+    "leadsTo": [
+      "prototyping"
+    ]
+  },
+  {
+    "id": "art-9",
+    "category": "art",
+    "label": "digital study 10",
+    "start": "2018-10",
+    "weight": 0.73,
+    "detail": {
+      "medium": "digital",
+      "hours": 5
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "art-10",
+    "category": "art",
+    "label": "collage study 11",
+    "start": "2019-11",
+    "weight": 0.25,
+    "detail": {
+      "medium": "collage",
+      "hours": 8
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "art-11",
+    "category": "art",
+    "label": "printmaking study 12",
+    "start": "2020-12",
+    "weight": 0.37,
+    "detail": {
+      "medium": "printmaking",
+      "hours": 11
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "art-12",
+    "category": "art",
+    "label": "watercolor study 13",
+    "start": "2021-01",
+    "weight": 0.49,
+    "detail": {
+      "medium": "watercolor",
+      "hours": 14
+    },
+    "leadsTo": [
+      "prototyping"
+    ]
+  },
+  {
+    "id": "art-13",
+    "category": "art",
+    "label": "ink study 14",
+    "start": "2022-02",
+    "weight": 0.61,
+    "detail": {
+      "medium": "ink",
+      "hours": 17
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "art-14",
+    "category": "art",
+    "label": "charcoal study 15",
+    "start": "2023-03",
+    "weight": 0.73,
+    "detail": {
+      "medium": "charcoal",
+      "hours": 20
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "art-15",
+    "category": "art",
+    "label": "digital study 16",
+    "start": "2024-04",
+    "weight": 0.25,
+    "detail": {
+      "medium": "digital",
+      "hours": 23
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "art-16",
+    "category": "art",
+    "label": "collage study 17",
+    "start": "2017-05",
+    "weight": 0.37,
+    "detail": {
+      "medium": "collage",
+      "hours": 2
+    },
+    "leadsTo": [
+      "prototyping"
+    ]
+  },
+  {
+    "id": "art-17",
+    "category": "art",
+    "label": "printmaking study 18",
+    "start": "2018-06",
+    "weight": 0.49,
+    "detail": {
+      "medium": "printmaking",
+      "hours": 5
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "art-18",
+    "category": "art",
+    "label": "watercolor study 19",
+    "start": "2019-07",
+    "weight": 0.61,
+    "detail": {
+      "medium": "watercolor",
+      "hours": 8
+    },
+    "leadsTo": [
+      "synthesis"
+    ]
+  },
+  {
+    "id": "art-19",
+    "category": "art",
+    "label": "ink study 20",
+    "start": "2020-08",
+    "weight": 0.73,
+    "detail": {
+      "medium": "ink",
+      "hours": 11
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "art-20",
+    "category": "art",
+    "label": "charcoal study 21",
+    "start": "2021-09",
+    "weight": 0.25,
+    "detail": {
+      "medium": "charcoal",
+      "hours": 14
+    },
+    "leadsTo": [
+      "prototyping"
+    ]
+  },
+  {
+    "id": "art-21",
+    "category": "art",
+    "label": "digital study 22",
+    "start": "2022-10",
+    "weight": 0.37,
+    "detail": {
+      "medium": "digital",
+      "hours": 17
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "art-22",
+    "category": "art",
+    "label": "collage study 23",
+    "start": "2023-11",
+    "weight": 0.49,
+    "detail": {
+      "medium": "collage",
+      "hours": 20
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "art-23",
+    "category": "art",
+    "label": "printmaking study 24",
+    "start": "2024-12",
+    "weight": 0.61,
+    "detail": {
+      "medium": "printmaking",
+      "hours": 23
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "art-24",
+    "category": "art",
+    "label": "watercolor study 25",
+    "start": "2017-01",
+    "weight": 0.73,
+    "detail": {
+      "medium": "watercolor",
+      "hours": 2
+    },
+    "leadsTo": [
+      "prototyping"
+    ]
+  },
+  {
+    "id": "art-25",
+    "category": "art",
+    "label": "ink study 26",
+    "start": "2018-02",
+    "weight": 0.25,
+    "detail": {
+      "medium": "ink",
+      "hours": 5
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "art-26",
+    "category": "art",
+    "label": "charcoal study 27",
+    "start": "2019-03",
+    "weight": 0.37,
+    "detail": {
+      "medium": "charcoal",
+      "hours": 8
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "art-27",
+    "category": "art",
+    "label": "digital study 28",
+    "start": "2020-04",
+    "weight": 0.49,
+    "detail": {
+      "medium": "digital",
+      "hours": 11
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "art-28",
+    "category": "art",
+    "label": "collage study 29",
+    "start": "2021-05",
+    "weight": 0.61,
+    "detail": {
+      "medium": "collage",
+      "hours": 14
+    },
+    "leadsTo": [
+      "prototyping"
+    ]
+  },
+  {
+    "id": "art-29",
+    "category": "art",
+    "label": "printmaking study 30",
+    "start": "2022-06",
+    "weight": 0.73,
+    "detail": {
+      "medium": "printmaking",
+      "hours": 17
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "art-30",
+    "category": "art",
+    "label": "watercolor study 31",
+    "start": "2023-07",
+    "weight": 0.25,
+    "detail": {
+      "medium": "watercolor",
+      "hours": 20
+    },
+    "leadsTo": [
+      "synthesis"
+    ]
+  },
+  {
+    "id": "art-31",
+    "category": "art",
+    "label": "ink study 32",
+    "start": "2024-08",
+    "weight": 0.37,
+    "detail": {
+      "medium": "ink",
+      "hours": 23
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "art-32",
+    "category": "art",
+    "label": "charcoal study 33",
+    "start": "2017-09",
+    "weight": 0.49,
+    "detail": {
+      "medium": "charcoal",
+      "hours": 2
+    },
+    "leadsTo": [
+      "prototyping"
+    ]
+  },
+  {
+    "id": "art-33",
+    "category": "art",
+    "label": "digital study 34",
+    "start": "2018-10",
+    "weight": 0.61,
+    "detail": {
+      "medium": "digital",
+      "hours": 5
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "art-34",
+    "category": "art",
+    "label": "collage study 35",
+    "start": "2019-11",
+    "weight": 0.73,
+    "detail": {
+      "medium": "collage",
+      "hours": 8
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "art-35",
+    "category": "art",
+    "label": "printmaking study 36",
+    "start": "2020-12",
+    "weight": 0.25,
+    "detail": {
+      "medium": "printmaking",
+      "hours": 11
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "art-36",
+    "category": "art",
+    "label": "watercolor study 37",
+    "start": "2021-01",
+    "weight": 0.37,
+    "detail": {
+      "medium": "watercolor",
+      "hours": 14
+    },
+    "leadsTo": [
+      "prototyping"
+    ]
+  },
+  {
+    "id": "art-37",
+    "category": "art",
+    "label": "ink study 38",
+    "start": "2022-02",
+    "weight": 0.49,
+    "detail": {
+      "medium": "ink",
+      "hours": 17
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "art-38",
+    "category": "art",
+    "label": "charcoal study 39",
+    "start": "2023-03",
+    "weight": 0.61,
+    "detail": {
+      "medium": "charcoal",
+      "hours": 20
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "art-39",
+    "category": "art",
+    "label": "digital study 40",
+    "start": "2024-04",
+    "weight": 0.73,
+    "detail": {
+      "medium": "digital",
+      "hours": 23
+    },
+    "leadsTo": []
+  }
+]

@@ -1,0 +1,506 @@
+[
+  {
+    "id": "trail-0",
+    "category": "trail",
+    "label": "Mt. Washington",
+    "start": "2016-01",
+    "weight": 0.3,
+    "detail": {
+      "elevation": "4000 ft",
+      "state": "NH"
+    },
+    "leadsTo": [
+      "systems"
+    ]
+  },
+  {
+    "id": "trail-1",
+    "category": "trail",
+    "label": "Mt. Lafayette",
+    "start": "2017-02",
+    "weight": 0.4,
+    "detail": {
+      "elevation": "4137 ft",
+      "state": "NH"
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "trail-2",
+    "category": "trail",
+    "label": "Mt. Garfield",
+    "start": "2018-03",
+    "weight": 0.5,
+    "detail": {
+      "elevation": "4274 ft",
+      "state": "NH"
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "trail-3",
+    "category": "trail",
+    "label": "Mt. Moosilauke",
+    "start": "2019-04",
+    "weight": 0.6000000000000001,
+    "detail": {
+      "elevation": "4411 ft",
+      "state": "NH"
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "trail-4",
+    "category": "trail",
+    "label": "Cannon Mountain",
+    "start": "2020-05",
+    "weight": 0.7,
+    "detail": {
+      "elevation": "4548 ft",
+      "state": "NH"
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "trail-5",
+    "category": "trail",
+    "label": "Mt. Jefferson",
+    "start": "2021-06",
+    "weight": 0.8,
+    "detail": {
+      "elevation": "4685 ft",
+      "state": "NH"
+    },
+    "leadsTo": [
+      "systems"
+    ]
+  },
+  {
+    "id": "trail-6",
+    "category": "trail",
+    "label": "Mt. Adams",
+    "start": "2022-07",
+    "weight": 0.9000000000000001,
+    "detail": {
+      "elevation": "4822 ft",
+      "state": "NH"
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "trail-7",
+    "category": "trail",
+    "label": "Mt. Madison",
+    "start": "2023-08",
+    "weight": 0.3,
+    "detail": {
+      "elevation": "4959 ft",
+      "state": "NH"
+    },
+    "leadsTo": [
+      "research"
+    ]
+  },
+  {
+    "id": "trail-8",
+    "category": "trail",
+    "label": "Franconia Ridge",
+    "start": "2024-09",
+    "weight": 0.4,
+    "detail": {
+      "elevation": "5096 ft",
+      "state": "NH"
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "trail-9",
+    "category": "trail",
+    "label": "Mt. Hale",
+    "start": "2016-10",
+    "weight": 0.5,
+    "detail": {
+      "elevation": "5233 ft",
+      "state": "NH"
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "trail-10",
+    "category": "trail",
+    "label": "Mt. Tom",
+    "start": "2017-11",
+    "weight": 0.6000000000000001,
+    "detail": {
+      "elevation": "5370 ft",
+      "state": "NH"
+    },
+    "leadsTo": [
+      "systems"
+    ]
+  },
+  {
+    "id": "trail-11",
+    "category": "trail",
+    "label": "Mt. Field",
+    "start": "2018-12",
+    "weight": 0.7,
+    "detail": {
+      "elevation": "5507 ft",
+      "state": "NH"
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "trail-12",
+    "category": "trail",
+    "label": "Mt. Willey",
+    "start": "2019-01",
+    "weight": 0.8,
+    "detail": {
+      "elevation": "5644 ft",
+      "state": "NH"
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "trail-13",
+    "category": "trail",
+    "label": "Mt. Osceola",
+    "start": "2020-02",
+    "weight": 0.9000000000000001,
+    "detail": {
+      "elevation": "5781 ft",
+      "state": "NH"
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "trail-14",
+    "category": "trail",
+    "label": "Mt. Tecumseh",
+    "start": "2021-03",
+    "weight": 0.3,
+    "detail": {
+      "elevation": "5918 ft",
+      "state": "NH"
+    },
+    "leadsTo": [
+      "research"
+    ]
+  },
+  {
+    "id": "trail-15",
+    "category": "trail",
+    "label": "Mt. Passaconaway",
+    "start": "2022-04",
+    "weight": 0.4,
+    "detail": {
+      "elevation": "6055 ft",
+      "state": "NH"
+    },
+    "leadsTo": [
+      "systems"
+    ]
+  },
+  {
+    "id": "trail-16",
+    "category": "trail",
+    "label": "Mt. Whiteface",
+    "start": "2023-05",
+    "weight": 0.5,
+    "detail": {
+      "elevation": "6192 ft",
+      "state": "NH"
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "trail-17",
+    "category": "trail",
+    "label": "Mt. Tripyramid",
+    "start": "2024-06",
+    "weight": 0.6000000000000001,
+    "detail": {
+      "elevation": "6329 ft",
+      "state": "NH"
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "trail-18",
+    "category": "trail",
+    "label": "Mt. Carrigain",
+    "start": "2016-07",
+    "weight": 0.7,
+    "detail": {
+      "elevation": "6466 ft",
+      "state": "NH"
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "trail-19",
+    "category": "trail",
+    "label": "Mt. Bond",
+    "start": "2017-08",
+    "weight": 0.8,
+    "detail": {
+      "elevation": "6603 ft",
+      "state": "NH"
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "trail-20",
+    "category": "trail",
+    "label": "Half Dome",
+    "start": "2018-09",
+    "weight": 0.9000000000000001,
+    "detail": {
+      "elevation": "6740 ft",
+      "state": "Various"
+    },
+    "leadsTo": [
+      "systems"
+    ]
+  },
+  {
+    "id": "trail-21",
+    "category": "trail",
+    "label": "Mt. Whitney",
+    "start": "2019-10",
+    "weight": 0.3,
+    "detail": {
+      "elevation": "6877 ft",
+      "state": "Various"
+    },
+    "leadsTo": [
+      "research"
+    ]
+  },
+  {
+    "id": "trail-22",
+    "category": "trail",
+    "label": "Angels Landing",
+    "start": "2020-11",
+    "weight": 0.4,
+    "detail": {
+      "elevation": "4014 ft",
+      "state": "Various"
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "trail-23",
+    "category": "trail",
+    "label": "Mt. Rainier (camp Muir)",
+    "start": "2021-12",
+    "weight": 0.5,
+    "detail": {
+      "elevation": "4151 ft",
+      "state": "Various"
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "trail-24",
+    "category": "trail",
+    "label": "Old Rag",
+    "start": "2022-01",
+    "weight": 0.6000000000000001,
+    "detail": {
+      "elevation": "4288 ft",
+      "state": "Various"
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "trail-25",
+    "category": "trail",
+    "label": "Mt. Katahdin",
+    "start": "2023-02",
+    "weight": 0.7,
+    "detail": {
+      "elevation": "4425 ft",
+      "state": "Various"
+    },
+    "leadsTo": [
+      "systems"
+    ]
+  },
+  {
+    "id": "trail-26",
+    "category": "trail",
+    "label": "Grays Peak",
+    "start": "2024-03",
+    "weight": 0.8,
+    "detail": {
+      "elevation": "4562 ft",
+      "state": "Various"
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "trail-27",
+    "category": "trail",
+    "label": "Mt. Elbert",
+    "start": "2016-04",
+    "weight": 0.9000000000000001,
+    "detail": {
+      "elevation": "4699 ft",
+      "state": "Various"
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "trail-28",
+    "category": "trail",
+    "label": "Harpers Ferry",
+    "start": "2017-05",
+    "weight": 0.3,
+    "detail": {
+      "elevation": "4836 ft",
+      "state": "Various"
+    },
+    "leadsTo": [
+      "research"
+    ]
+  },
+  {
+    "id": "trail-29",
+    "category": "trail",
+    "label": "Breakneck Ridge",
+    "start": "2018-06",
+    "weight": 0.4,
+    "detail": {
+      "elevation": "4973 ft",
+      "state": "Various"
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "trail-30",
+    "category": "trail",
+    "label": "Bear Mountain",
+    "start": "2019-07",
+    "weight": 0.5,
+    "detail": {
+      "elevation": "5110 ft",
+      "state": "Various"
+    },
+    "leadsTo": [
+      "systems"
+    ]
+  },
+  {
+    "id": "trail-31",
+    "category": "trail",
+    "label": "Storm King",
+    "start": "2020-08",
+    "weight": 0.6000000000000001,
+    "detail": {
+      "elevation": "5247 ft",
+      "state": "Various"
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "trail-32",
+    "category": "trail",
+    "label": "Cadillac Mountain",
+    "start": "2021-09",
+    "weight": 0.7,
+    "detail": {
+      "elevation": "5384 ft",
+      "state": "Various"
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "trail-33",
+    "category": "trail",
+    "label": "Camel's Hump",
+    "start": "2022-10",
+    "weight": 0.8,
+    "detail": {
+      "elevation": "5521 ft",
+      "state": "Various"
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "trail-34",
+    "category": "trail",
+    "label": "Mt. Mansfield",
+    "start": "2023-11",
+    "weight": 0.9000000000000001,
+    "detail": {
+      "elevation": "5658 ft",
+      "state": "Various"
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "trail-35",
+    "category": "trail",
+    "label": "Max Patch",
+    "start": "2024-12",
+    "weight": 0.3,
+    "detail": {
+      "elevation": "5795 ft",
+      "state": "Various"
+    },
+    "leadsTo": [
+      "systems"
+    ]
+  },
+  {
+    "id": "trail-36",
+    "category": "trail",
+    "label": "Grayson Highlands",
+    "start": "2016-01",
+    "weight": 0.4,
+    "detail": {
+      "elevation": "5932 ft",
+      "state": "Various"
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "trail-37",
+    "category": "trail",
+    "label": "Shenandoah Old Rag",
+    "start": "2017-02",
+    "weight": 0.5,
+    "detail": {
+      "elevation": "6069 ft",
+      "state": "Various"
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "trail-38",
+    "category": "trail",
+    "label": "Mt. Mitchell",
+    "start": "2018-03",
+    "weight": 0.6000000000000001,
+    "detail": {
+      "elevation": "6206 ft",
+      "state": "Various"
+    },
+    "leadsTo": []
+  },
+  {
+    "id": "trail-39",
+    "category": "trail",
+    "label": "Clingmans Dome",
+    "start": "2019-04",
+    "weight": 0.7,
+    "detail": {
+      "elevation": "6343 ft",
+      "state": "Various"
+    },
+    "leadsTo": []
+  }
+]

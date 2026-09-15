@@ -1,0 +1,422 @@
+[
+  {
+    "id": "mind-0",
+    "category": "mind",
+    "label": "Participatory design in civic tech",
+    "start": "2024-01",
+    "weight": 0.35,
+    "detail": {
+      "status": "Reading"
+    },
+    "leadsTo": [
+      "research"
+    ]
+  },
+  {
+    "id": "mind-1",
+    "category": "mind",
+    "label": "Calm technology",
+    "start": "2025-02",
+    "weight": 0.44999999999999996,
+    "detail": {
+      "status": "Writing"
+    },
+    "leadsTo": [
+      "research",
+      "synthesis"
+    ]
+  },
+  {
+    "id": "mind-2",
+    "category": "mind",
+    "label": "Research ops at scale",
+    "start": "2024-03",
+    "weight": 0.55,
+    "detail": {
+      "status": "Experimenting"
+    },
+    "leadsTo": [
+      "research",
+      "synthesis",
+      "systems"
+    ]
+  },
+  {
+    "id": "mind-3",
+    "category": "mind",
+    "label": "Wayfinding without signage",
+    "start": "2025-04",
+    "weight": 0.65,
+    "detail": {
+      "status": "Reading"
+    },
+    "leadsTo": [
+      "research"
+    ]
+  },
+  {
+    "id": "mind-4",
+    "category": "mind",
+    "label": "Interview fatigue",
+    "start": "2024-05",
+    "weight": 0.35,
+    "detail": {
+      "status": "Writing"
+    },
+    "leadsTo": [
+      "research",
+      "synthesis"
+    ]
+  },
+  {
+    "id": "mind-5",
+    "category": "mind",
+    "label": "Mixed-methods triangulation",
+    "start": "2025-06",
+    "weight": 0.44999999999999996,
+    "detail": {
+      "status": "Experimenting"
+    },
+    "leadsTo": [
+      "research",
+      "synthesis",
+      "systems"
+    ]
+  },
+  {
+    "id": "mind-6",
+    "category": "mind",
+    "label": "Design ethics in AI products",
+    "start": "2024-07",
+    "weight": 0.55,
+    "detail": {
+      "status": "Reading"
+    },
+    "leadsTo": [
+      "research"
+    ]
+  },
+  {
+    "id": "mind-7",
+    "category": "mind",
+    "label": "Sensory-friendly museum experiences",
+    "start": "2025-08",
+    "weight": 0.65,
+    "detail": {
+      "status": "Writing"
+    },
+    "leadsTo": [
+      "research",
+      "synthesis"
+    ]
+  },
+  {
+    "id": "mind-8",
+    "category": "mind",
+    "label": "Remote diary studies",
+    "start": "2024-09",
+    "weight": 0.35,
+    "detail": {
+      "status": "Experimenting"
+    },
+    "leadsTo": [
+      "research",
+      "synthesis",
+      "systems"
+    ]
+  },
+  {
+    "id": "mind-9",
+    "category": "mind",
+    "label": "Service blueprinting",
+    "start": "2025-10",
+    "weight": 0.44999999999999996,
+    "detail": {
+      "status": "Reading"
+    },
+    "leadsTo": [
+      "research"
+    ]
+  },
+  {
+    "id": "mind-10",
+    "category": "mind",
+    "label": "Evidence-based portfolio craft",
+    "start": "2024-11",
+    "weight": 0.55,
+    "detail": {
+      "status": "Writing"
+    },
+    "leadsTo": [
+      "research",
+      "synthesis"
+    ]
+  },
+  {
+    "id": "mind-11",
+    "category": "mind",
+    "label": "Trauma-informed interviewing",
+    "start": "2025-12",
+    "weight": 0.65,
+    "detail": {
+      "status": "Experimenting"
+    },
+    "leadsTo": [
+      "research",
+      "synthesis",
+      "systems"
+    ]
+  },
+  {
+    "id": "mind-12",
+    "category": "mind",
+    "label": "Data physicalization",
+    "start": "2024-01",
+    "weight": 0.35,
+    "detail": {
+      "status": "Reading"
+    },
+    "leadsTo": [
+      "research"
+    ]
+  },
+  {
+    "id": "mind-13",
+    "category": "mind",
+    "label": "Accessibility heuristics",
+    "start": "2025-02",
+    "weight": 0.44999999999999996,
+    "detail": {
+      "status": "Writing"
+    },
+    "leadsTo": [
+      "research",
+      "synthesis"
+    ]
+  },
+  {
+    "id": "mind-14",
+    "category": "mind",
+    "label": "Strategic foresight methods",
+    "start": "2024-03",
+    "weight": 0.55,
+    "detail": {
+      "status": "Experimenting"
+    },
+    "leadsTo": [
+      "research",
+      "synthesis",
+      "systems"
+    ]
+  },
+  {
+    "id": "mind-15",
+    "category": "mind",
+    "label": "Behavioral journey mapping",
+    "start": "2025-04",
+    "weight": 0.65,
+    "detail": {
+      "status": "Reading"
+    },
+    "leadsTo": [
+      "research"
+    ]
+  },
+  {
+    "id": "mind-16",
+    "category": "mind",
+    "label": "Research repository hygiene",
+    "start": "2024-05",
+    "weight": 0.35,
+    "detail": {
+      "status": "Writing"
+    },
+    "leadsTo": [
+      "research",
+      "synthesis"
+    ]
+  },
+  {
+    "id": "mind-17",
+    "category": "mind",
+    "label": "Inclusive recruitment panels",
+    "start": "2025-06",
+    "weight": 0.44999999999999996,
+    "detail": {
+      "status": "Experimenting"
+    },
+    "leadsTo": [
+      "research",
+      "synthesis",
+      "systems"
+    ]
+  },
+  {
+    "id": "mind-18",
+    "category": "mind",
+    "label": "Prototype fidelity tradeoffs",
+    "start": "2024-07",
+    "weight": 0.55,
+    "detail": {
+      "status": "Reading"
+    },
+    "leadsTo": [
+      "research"
+    ]
+  },
+  {
+    "id": "mind-19",
+    "category": "mind",
+    "label": "Stakeholder alignment workshops",
+    "start": "2025-08",
+    "weight": 0.65,
+    "detail": {
+      "status": "Writing"
+    },
+    "leadsTo": [
+      "research",
+      "synthesis"
+    ]
+  },
+  {
+    "id": "mind-20",
+    "category": "mind",
+    "label": "Cross-cultural UX",
+    "start": "2024-09",
+    "weight": 0.35,
+    "detail": {
+      "status": "Experimenting"
+    },
+    "leadsTo": [
+      "research",
+      "synthesis",
+      "systems"
+    ]
+  },
+  {
+    "id": "mind-21",
+    "category": "mind",
+    "label": "Design systems governance",
+    "start": "2025-10",
+    "weight": 0.44999999999999996,
+    "detail": {
+      "status": "Reading"
+    },
+    "leadsTo": [
+      "research"
+    ]
+  },
+  {
+    "id": "mind-22",
+    "category": "mind",
+    "label": "Measuring research impact",
+    "start": "2024-11",
+    "weight": 0.55,
+    "detail": {
+      "status": "Writing"
+    },
+    "leadsTo": [
+      "research",
+      "synthesis"
+    ]
+  },
+  {
+    "id": "mind-23",
+    "category": "mind",
+    "label": "Slow hiking as thinking time",
+    "start": "2025-12",
+    "weight": 0.65,
+    "detail": {
+      "status": "Experimenting"
+    },
+    "leadsTo": [
+      "research",
+      "synthesis",
+      "systems"
+    ]
+  },
+  {
+    "id": "mind-24",
+    "category": "mind",
+    "label": "Watercolor as synthesis tool",
+    "start": "2024-01",
+    "weight": 0.35,
+    "detail": {
+      "status": "Reading"
+    },
+    "leadsTo": [
+      "research"
+    ]
+  },
+  {
+    "id": "mind-25",
+    "category": "mind",
+    "label": "Teaching critique without cruelty",
+    "start": "2025-02",
+    "weight": 0.44999999999999996,
+    "detail": {
+      "status": "Writing"
+    },
+    "leadsTo": [
+      "research",
+      "synthesis"
+    ]
+  },
+  {
+    "id": "mind-26",
+    "category": "mind",
+    "label": "Open-source research tooling",
+    "start": "2024-03",
+    "weight": 0.55,
+    "detail": {
+      "status": "Experimenting"
+    },
+    "leadsTo": [
+      "research",
+      "synthesis",
+      "systems"
+    ]
+  },
+  {
+    "id": "mind-27",
+    "category": "mind",
+    "label": "Consent UX patterns",
+    "start": "2025-04",
+    "weight": 0.65,
+    "detail": {
+      "status": "Reading"
+    },
+    "leadsTo": [
+      "research"
+    ]
+  },
+  {
+    "id": "mind-28",
+    "category": "mind",
+    "label": "Dark patterns audit frameworks",
+    "start": "2024-05",
+    "weight": 0.35,
+    "detail": {
+      "status": "Writing"
+    },
+    "leadsTo": [
+      "research",
+      "synthesis"
+    ]
+  },
+  {
+    "id": "mind-29",
+    "category": "mind",
+    "label": "Portfolio as argument",
+    "start": "2025-06",
+    "weight": 0.44999999999999996,
+    "detail": {
+      "status": "Experimenting"
+    },
+    "leadsTo": [
+      "research",
+      "synthesis",
+      "systems"
+    ]
+  }
+]
