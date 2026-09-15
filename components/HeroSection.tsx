@@ -18,7 +18,7 @@ export function HeroSection() {
 
       <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-ground-deep/90 pb-10 pt-32">
         <div className="pointer-events-auto mx-auto max-w-6xl px-5 md:px-8">
-          <h1 className="display text-4xl text-paper md:text-6xl lg:text-7xl">
+          <h1 className="display text-4xl uppercase text-paper md:text-6xl lg:text-7xl">
             Ashley Goh
           </h1>
           <p className="prose-width mt-4 text-lg text-muted md:text-xl">
