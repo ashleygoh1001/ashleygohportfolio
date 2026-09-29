@@ -1,0 +1,20 @@
+{
+  "beyondWork": [
+    {
+      "title": "Painting",
+      "text": "Watercolor and ink studies—slow looking that feeds how I compose screens."
+    },
+    {
+      "title": "Hiking",
+      "text": "White Mountains regular; long walks are where I untangle research threads."
+    },
+    {
+      "title": "Making",
+      "text": "Electronics, sewing, and foam-core models when an idea needs to exist in the world."
+    }
+  ],
+  "education": "Dartmouth College — B.A. Computer Science, Minor in Human-Centered Design\nTuck Bridge Program",
+  "skillsUx": "Figma, Adobe Creative Suite, user research & synthesis, rapid physical prototyping, generative AI for research / ideation / storytelling",
+  "skillsTechnical": "Python, SQL, JavaScript, React, Node.js, Java, C, R, MongoDB, AWS, Git, Alteryx, Excel",
+  "awards": "Certified Scrum Master (CSM)\nAlteryx Designer Core\nHackDartmouth IX 2024 — Best Use of AI in Education\nMathWorks Math Modeling Challenge 2021 — Honorable Mention"
+}

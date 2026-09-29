@@ -1,0 +1,33 @@
+{
+  "thesis": "I design with a keen eye, and I build what I design.",
+  "intro": "I'm Ashley Goh—a product and UX designer with a computer science background from Dartmouth (CS major, Human-Centered Design minor, Tuck Bridge Program). I work at the intersection of design research, making, and code.",
+  "currently": "Automation & IT Risk Analyst at Bank of America · looking for product design roles",
+  "email": "ashleyqgoh@gmail.com",
+  "linkedInUrl": "https://linkedin.com/in/ashleyqgoh",
+  "sections": [
+    {
+      "sectionId": "design-research",
+      "heading": "Design Research",
+      "description": "Mixed-methods studies and synthesis that turn messy human data into decisions teams can act on.",
+      "order": 0
+    },
+    {
+      "sectionId": "making-prototyping",
+      "heading": "Making & Prototyping",
+      "description": "Physical and digital prototypes—especially when accessibility and craft matter.",
+      "order": 1
+    },
+    {
+      "sectionId": "technical-automation",
+      "heading": "Technical & Automation",
+      "description": "Pipelines, simulations, and automation that multiply impact beyond a single screen.",
+      "order": 2
+    },
+    {
+      "sectionId": "teaching",
+      "heading": "Teaching",
+      "description": "Mentoring teams through human-centered design from framing through delivery.",
+      "order": 3
+    }
+  ]
+}
