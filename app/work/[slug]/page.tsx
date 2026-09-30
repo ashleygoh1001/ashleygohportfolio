@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { CaseStudyView } from "@/components/CaseStudyView";
 import { getAllProjects, getProject } from "@/lib/projects";
+import { resolveProjectImage } from "@/lib/images";
 import type { Metadata } from "next";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -20,7 +21,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: project.title,
       description: project.subtitle,
-      images: project.coverImage ? [{ url: project.coverImage }] : undefined,
+      images: project.coverImage
+        ? [{ url: resolveProjectImage(project.coverImage)! }]
+        : undefined,
     },
   };
 }
