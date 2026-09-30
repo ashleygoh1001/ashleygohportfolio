@@ -15,17 +15,21 @@ export default async function HomePage() {
 
   return (
     <main id="main-content">
-      <section className="mx-auto max-w-6xl px-5 py-14 md:px-8 md:py-20">
-        <h1 className="max-w-4xl text-3xl font-extrabold leading-tight text-text-primary md:text-5xl">
-          {settings.thesis}
-        </h1>
-        <p className="prose-width mt-6 text-text-secondary">{settings.intro}</p>
-        <p className="mt-6 text-base font-semibold text-text-primary">
-          Currently:{" "}
-          <span className="font-medium text-text-secondary">
-            {settings.currently}
-          </span>
-        </p>
+      <section className="mx-auto max-w-6xl px-5 py-14 text-center md:px-8 md:py-20">
+        <div className="mx-auto max-w-3xl">
+          <h1 className="text-3xl font-extrabold leading-tight text-text-primary md:text-5xl">
+            {settings.thesis}
+          </h1>
+          <p className="mx-auto mt-6 max-w-[70ch] text-text-secondary">
+            {settings.intro}
+          </p>
+          <p className="mt-6 text-base font-semibold text-text-primary">
+            Currently:{" "}
+            <span className="font-medium text-text-secondary">
+              {settings.currently}
+            </span>
+          </p>
+        </div>
       </section>
 
       <div className="mx-auto flex max-w-6xl flex-col gap-20 px-5 pb-20 md:px-8">
