@@ -5,6 +5,7 @@ import { MarkdocContent } from "@/components/MarkdocContent";
 import { getAdjacentProjects } from "@/lib/projects";
 import { sectionMeta } from "@/lib/theme";
 import { resolveProjectImage } from "@/lib/images";
+import type { SectionId } from "@/keystatic.config";
 
 type Project = NonNullable<Awaited<ReturnType<typeof import("@/lib/projects").getProject>>>;
 
