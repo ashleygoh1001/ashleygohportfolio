@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ProjectGallery } from "@/components/ProjectGallery";
 import { EmbeddedFrame } from "@/components/EmbeddedFrame";
 import { MarkdocContent } from "@/components/MarkdocContent";
 import { getAdjacentProjects } from "@/lib/projects";
@@ -22,8 +21,9 @@ export async function CaseStudyView({ project }: { project: Project }) {
   const presentationId = presentationLink?.url?.match(
     /\/presentation\/d\/([^/]+)/
   )?.[1];
-  const websiteLink = project.slug === "asl-fingerspelling-hand"
+  const websiteLink = ["asl-fingerspelling-hand", "build-a-box"].includes(project.slug)
     ? project.links?.find((link) => link.url === "https://aslhand.vercel.app/")
+      ?? project.links?.find((link) => link.url === "https://build-a-box-site.vercel.app/")
     : undefined;
   const embedSrc = presentationId
     ? `https://docs.google.com/presentation/d/${presentationId}/embed`
@@ -97,20 +97,6 @@ export async function CaseStudyView({ project }: { project: Project }) {
           ))}
         </div>
       </section>
-
-      {project.gallery && project.gallery.length > 0 && (
-        <section className="mx-auto mt-14 max-w-6xl px-5 md:px-8">
-          <h2 className="text-2xl font-extrabold text-text-primary">
-            Visual summary
-          </h2>
-          <p className="mt-2 text-text-secondary">
-            Skim the highlights—captions carry the narrative at a glance.
-          </p>
-          <div className="mt-8">
-            <ProjectGallery items={(project.gallery ?? []) as never} />
-          </div>
-        </section>
-      )}
 
       {showDesignBuild && (
         <aside
