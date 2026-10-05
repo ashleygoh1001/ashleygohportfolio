@@ -32,7 +32,6 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({ children }: LayoutProps<"/">) {
   const settings = await getSiteSettings();
-  const resumeHref = settings.resume ?? "/files/resume.pdf";
 
   return (
     <html lang="en" className={nunito.variable}>
@@ -40,12 +39,11 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
         <a href="#main-content" className="skip-link">
           Skip to content
         </a>
-        <SiteHeader resumeHref={resumeHref} />
+        <SiteHeader />
         <div className="page-enter">{children}</div>
         <SiteFooter
           email={settings.email}
           linkedInUrl={settings.linkedInUrl}
-          resumeHref={resumeHref}
         />
       </body>
     </html>

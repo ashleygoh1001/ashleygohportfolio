@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { MarkdocContent } from "@/components/MarkdocContent";
-import { getAboutContent, getSiteSettings } from "@/lib/site";
+import { getAboutContent } from "@/lib/site";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -11,8 +11,6 @@ export const metadata: Metadata = {
 
 export default async function AboutPage() {
   const about = await getAboutContent();
-  const settings = await getSiteSettings();
-  const resumeHref = settings.resume ?? "/files/resume.pdf";
 
   return (
     <main id="main-content" className="mx-auto max-w-6xl px-5 py-14 md:px-8 md:py-20">
@@ -130,14 +128,6 @@ export default async function AboutPage() {
                 </p>
               </div>
             </div>
-            <p className="mt-8">
-              <a
-                href={resumeHref}
-                className="inline-flex rounded-[14px] border border-border-warm bg-surface px-5 py-2.5 font-bold text-text-primary transition-colors hover:border-accent-sage"
-              >
-                Download résumé (PDF)
-              </a>
-            </p>
           </section>
         </div>
       </div>

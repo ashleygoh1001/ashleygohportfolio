@@ -1,10 +1,9 @@
 type Props = {
   email: string;
   linkedInUrl: string;
-  resumeHref: string;
 };
 
-export function SiteFooter({ email, linkedInUrl, resumeHref }: Props) {
+export function SiteFooter({ email, linkedInUrl }: Props) {
   const year = new Date().getFullYear();
 
   return (
@@ -24,12 +23,6 @@ export function SiteFooter({ email, linkedInUrl, resumeHref }: Props) {
             rel="noopener noreferrer"
           >
             LinkedIn
-          </a>
-          <a
-            href={resumeHref}
-            className="font-semibold text-text-primary underline-offset-4 hover:underline"
-          >
-            Resume (PDF)
           </a>
         </div>
         <p className="text-sm text-text-secondary">© {year} Ashley Goh</p>

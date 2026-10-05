@@ -3,16 +3,12 @@
 import Link from "next/link";
 import { useState } from "react";
 
-type Props = {
-  resumeHref: string;
-};
-
 const nav = [
   { href: "/#work", label: "Work" },
   { href: "/about", label: "About" },
 ];
 
-export function SiteHeader({ resumeHref }: Props) {
+export function SiteHeader() {
   const [open, setOpen] = useState(false);
 
   return (
@@ -35,12 +31,6 @@ export function SiteHeader({ resumeHref }: Props) {
               {item.label}
             </Link>
           ))}
-          <a
-            href={resumeHref}
-            className="rounded-[14px] border border-border-warm bg-surface px-4 py-2 font-semibold text-text-primary transition-colors hover:border-accent-coral"
-          >
-            Resume
-          </a>
         </nav>
 
         <button
@@ -72,15 +62,6 @@ export function SiteHeader({ resumeHref }: Props) {
                 </Link>
               </li>
             ))}
-            <li>
-              <a
-                href={resumeHref}
-                className="block font-semibold text-text-primary"
-                onClick={() => setOpen(false)}
-              >
-                Resume (PDF)
-              </a>
-            </li>
           </ul>
         </nav>
       )}
