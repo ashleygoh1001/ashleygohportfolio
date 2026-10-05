@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { EmbeddedFrame } from "@/components/EmbeddedFrame";
+import { ProjectImageLightbox } from "@/components/ProjectImageLightbox";
 import { MarkdocContent } from "@/components/MarkdocContent";
 import { getAdjacentProjects } from "@/lib/projects";
 import { sectionMeta } from "@/lib/theme";
+import { resolveProjectImage } from "@/lib/images";
 import type { SectionId } from "@/keystatic.config";
 
 type Project = NonNullable<Awaited<ReturnType<typeof import("@/lib/projects").getProject>>>;
@@ -11,6 +13,7 @@ export async function CaseStudyView({ project }: { project: Project }) {
   const { prev, next } = await getAdjacentProjects(project.slug);
   const section = project.section as SectionId;
   const accent = sectionMeta[section].accent;
+  const cover = resolveProjectImage(project.coverImage);
   let showDesignBuild = Boolean(project.designAndBuild?.trim());
   const presentationLink = project.links?.find((link) =>
     link.url?.includes("docs.google.com/presentation/d/")
@@ -60,6 +63,15 @@ export async function CaseStudyView({ project }: { project: Project }) {
                 </a>
               </div>
             )}
+          </div>
+        )}
+        {!embedSrc && cover && (
+          <div className="relative mt-8 aspect-[16/9] overflow-hidden rounded-2xl border border-border-warm bg-cream">
+            <ProjectImageLightbox
+              src={cover}
+              alt={`${project.title} cover image`}
+              title={project.title}
+            />
           </div>
         )}
       </header>
