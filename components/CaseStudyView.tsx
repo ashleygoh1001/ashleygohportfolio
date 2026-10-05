@@ -34,6 +34,7 @@ export async function CaseStudyView({ project }: { project: Project }) {
   const embedSrc = presentationId
     ? `https://docs.google.com/presentation/d/${presentationId}/embed`
     : websiteLink?.url ?? pdfEmbed;
+  const showStaticCover = project.slug !== "design-thinking-ta";
 
   return (
     <article>
@@ -65,7 +66,7 @@ export async function CaseStudyView({ project }: { project: Project }) {
             )}
           </div>
         )}
-        {!embedSrc && cover && (
+        {!embedSrc && cover && showStaticCover && (
           <div className="relative mt-8 aspect-[16/9] overflow-hidden rounded-2xl border border-border-warm bg-cream">
             <ProjectImageLightbox
               src={cover}
