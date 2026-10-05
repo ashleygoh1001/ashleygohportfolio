@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ProjectGallery } from "@/components/ProjectGallery";
-import { GoogleSlidesEmbed } from "@/components/GoogleSlidesEmbed";
+import { EmbeddedFrame } from "@/components/EmbeddedFrame";
 import { MarkdocContent } from "@/components/MarkdocContent";
 import { getAdjacentProjects } from "@/lib/projects";
 import { sectionMeta } from "@/lib/theme";
@@ -22,6 +22,12 @@ export async function CaseStudyView({ project }: { project: Project }) {
   const presentationId = presentationLink?.url?.match(
     /\/presentation\/d\/([^/]+)/
   )?.[1];
+  const websiteLink = project.slug === "asl-fingerspelling-hand"
+    ? project.links?.find((link) => link.url === "https://aslhand.vercel.app/")
+    : undefined;
+  const embedSrc = presentationId
+    ? `https://docs.google.com/presentation/d/${presentationId}/embed`
+    : websiteLink?.url;
 
   return (
     <article>
@@ -31,11 +37,28 @@ export async function CaseStudyView({ project }: { project: Project }) {
           {project.title}
         </h1>
         <div className="relative mt-8 aspect-[16/9] overflow-hidden rounded-2xl border border-border-warm bg-cream">
-          {presentationId ? (
-            <GoogleSlidesEmbed
-              src={`https://docs.google.com/presentation/d/${presentationId}/embed`}
-              title={presentationLink?.label ?? "Google Slides presentation"}
-            />
+          {embedSrc ? (
+            <>
+              <EmbeddedFrame
+                src={embedSrc}
+                title={
+                  presentationLink?.label ?? websiteLink?.label ?? "Embedded project"
+                }
+              />
+              {websiteLink && (
+                <div className="absolute left-3 top-3 z-10 flex items-center gap-3 rounded-full border border-border-warm bg-surface/95 px-3 py-1.5 text-sm font-bold text-text-primary shadow-sm">
+                  <span>Embedded website</span>
+                  <a
+                    href={websiteLink.url ?? "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline underline-offset-2 hover:text-text-secondary"
+                  >
+                    Open site
+                  </a>
+                </div>
+              )}
+            </>
           ) : cover ? (
             <Image
               src={cover}
@@ -101,7 +124,7 @@ export async function CaseStudyView({ project }: { project: Project }) {
             }}
           >
             <h2 className="text-xl font-extrabold text-text-primary">
-              Design + build
+              Design and Build
             </h2>
             <div className="mt-3 whitespace-pre-line text-text-secondary">
               {project.designAndBuild}
