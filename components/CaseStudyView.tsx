@@ -110,39 +110,30 @@ export async function CaseStudyView({ project }: { project: Project }) {
         </aside>
       )}
 
-      <section className="mx-auto mt-14 max-w-3xl px-5 md:px-8">
-        <details className="group rounded-2xl border border-border-warm bg-surface open:shadow-[var(--shadow-hover)]">
-          <summary className="cursor-pointer list-none px-6 py-5 font-extrabold text-text-primary marker:content-none [&::-webkit-details-marker]:hidden">
-            The full story
-            <span className="mt-1 block text-sm font-semibold text-text-secondary group-open:hidden">
-              Problem → Process → Outcome → What I learned
-            </span>
-          </summary>
-          <div className="border-t border-border-warm px-6 pb-8 pt-4">
-            <MarkdocContent content={project.fullStory} />
+      <section className="mx-auto mt-14 max-w-6xl px-5 md:px-8">
+        <div>
+          <MarkdocContent content={project.fullStory} />
+        </div>
+        {project.links && project.links.length > 0 && (
+          <div className="mt-10 border-t border-border-warm pt-6">
+            <h3 className="text-lg font-extrabold text-text-primary">Links</h3>
+            <ul className="mt-3 flex flex-wrap gap-4">
+              {project.links.map((link) => (
+                <li key={`${link.label}-${link.url}`}>
+                  <a
+                    href={link.url ?? "#"}
+                    className="font-semibold text-text-primary underline-offset-4 hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
-        </details>
+        )}
       </section>
-
-      {project.links && project.links.length > 0 && (
-        <section className="mx-auto mt-10 max-w-3xl px-5 md:px-8">
-          <h2 className="text-lg font-extrabold text-text-primary">Links</h2>
-          <ul className="mt-3 flex flex-wrap gap-4">
-            {project.links.map((link) => (
-              <li key={`${link.label}-${link.url}`}>
-                <a
-                  href={link.url ?? "#"}
-                  className="font-semibold text-text-primary underline-offset-4 hover:underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
 
       <nav
         aria-label="Project navigation"
