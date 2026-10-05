@@ -1,5 +1,5 @@
 ---
-title: High Honors Thesis (GABM)
+title: High Honors Computer Science Thesis
 subtitle: Generative agent-based modeling · Research
 section: technical-automation
 order: 1
@@ -8,33 +8,36 @@ tags:
   - AI Simulation
   - Research
   - Systems Thinking
-role: Thesis author
-timeline: Senior year
-team: Faculty advisors
+role: Author and Researcher
+timeline: January 2026 - June 2026
+team: Solo + faculty advisor
 tools: Simulation design, Python
 outcome: GABM framework for prioritizing research directions
-gallery:
-  - discriminant: image
-    value:
-      image: high-honors-thesis-gabm.png
-      caption: Framework diagram (placeholder)
-      alt: Placeholder visual for GABM thesis
-links: []
+gallery: []
+links:
+  - label: Chrome Web Store
+    url: https://chromewebstore.google.com/detail/kmdmiaijepbpoocaijbbcmbpgmpocjen
+  - label: GitHub
+    url: https://github.com/ashleygoh1001/frank
 featured: true
 ---
 
-## Problem
+## What I Did
 
-Social scientists invest heavily before knowing if a research direction will pay off.
+**The problem.** Comparing social interventions the standard way means running a separate human-subject study for each one. That takes months, costs a lot, and usually draws on narrow participant pools. Researchers end up choosing which interventions to test mostly on intuition, and promising ideas can sit untested for years.
 
-## Process
+**The idea.** My thesis proposes using generative agent-based models (GABMs) as a *prioritization layer*: a step between literature review and human-subject experiments. LLM-driven agents simulate the scenario, and the results narrow a long list of candidate interventions down to the one or two most worth testing with real people. It's a filter, not an oracle. It doesn't predict real-world effect sizes; it just ranks which intervention to test first. I formalized this as a six-step framework: literature review, candidate selection, generative simulation, comparative evaluation, intervention prioritization, and human-subject study.
 
-Proposed a generative agent-based modeling (GABM) framework to explore promising directions before committing time and funding.
+**The proof of concept.** I applied the framework to social loafing in computer science group projects.
 
-## Outcome
+- A systematic review of the literature surfaced six empirically supported interventions: Agile methodologies, immediate and meaningful feedback, peer evaluation, task visibility, tracking individual contributions, and weekly logs.
+- Using Google DeepMind's Concordia library with Gemini 2.5 Flash, I simulated 100 teams of five agents under the control and each intervention, 700 simulations in total. Agents varied along eight dimensions: the Big Five personality traits, preference for group work, winning orientation, and skill level.
+- I analyzed the results with OLS regression, cluster-robust standard errors, and Benjamini-Hochberg correction. All six interventions significantly reduced perceived social loafing, and **immediate and meaningful feedback ranked first**.
 
-High Honors thesis articulating the framework and evaluation plan.
+**Frank.** To turn that finding into something people can use, I built Frank, a Chrome extension that overlays GitHub to encourage immediate, specific, and actionable pull request feedback. It blocks low-effort reviews like "LGTM" and adds a live countdown badge showing how long a PR has gone without a substantive review. It's designed as a nudge, not a monitoring tool.
+
+**What's next.** The simulations only rank interventions, so the real test is a randomized controlled trial of Frank in an actual classroom. I'm also interested in using the same simulation setup to inform research-backed group formation, and in extending Frank to support other interventions like peer evaluation and task visibility.
 
 ## What I Learned
 
-Systems thinking is a design skill—models are interfaces to uncertainty.
+I learned that simulation is most useful here as a prioritization tool, not a substitute for human research: it can narrow a complex intervention space, but real-world testing is still what validates the result. Turning the strongest simulated finding into Frank also showed me that research becomes more valuable when it carries through to a concrete, testable tool.

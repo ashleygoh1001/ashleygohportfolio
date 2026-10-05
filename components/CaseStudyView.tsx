@@ -1,10 +1,8 @@
 import Link from "next/link";
-import Image from "next/image";
 import { EmbeddedFrame } from "@/components/EmbeddedFrame";
 import { MarkdocContent } from "@/components/MarkdocContent";
 import { getAdjacentProjects } from "@/lib/projects";
 import { sectionMeta } from "@/lib/theme";
-import { resolveProjectImage } from "@/lib/images";
 import type { SectionId } from "@/keystatic.config";
 
 type Project = NonNullable<Awaited<ReturnType<typeof import("@/lib/projects").getProject>>>;
@@ -13,7 +11,6 @@ export async function CaseStudyView({ project }: { project: Project }) {
   const { prev, next } = await getAdjacentProjects(project.slug);
   const section = project.section as SectionId;
   const accent = sectionMeta[section].accent;
-  const cover = resolveProjectImage(project.coverImage);
   let showDesignBuild = Boolean(project.designAndBuild?.trim());
   const presentationLink = project.links?.find((link) =>
     link.url?.includes("docs.google.com/presentation/d/")
@@ -25,9 +22,15 @@ export async function CaseStudyView({ project }: { project: Project }) {
     ? project.links?.find((link) => link.url === "https://aslhand.vercel.app/")
       ?? project.links?.find((link) => link.url === "https://build-a-box-site.vercel.app/")
     : undefined;
+  const pdfUrl = project.slug === "high-honors-thesis-gabm"
+    ? "/files/high-honors-thesis-gabm.pdf"
+    : undefined;
+  const pdfEmbed = pdfUrl
+    ? `${pdfUrl}#toolbar=0&navpanes=0&scrollbar=0`
+    : undefined;
   const embedSrc = presentationId
     ? `https://docs.google.com/presentation/d/${presentationId}/embed`
-    : websiteLink?.url;
+    : websiteLink?.url ?? pdfEmbed;
 
   return (
     <article>
@@ -36,53 +39,36 @@ export async function CaseStudyView({ project }: { project: Project }) {
         <h1 className="mt-2 text-4xl font-extrabold text-text-primary md:text-5xl">
           {project.title}
         </h1>
-        <div className="relative mt-8 aspect-[16/9] overflow-hidden rounded-2xl border border-border-warm bg-cream">
-          {embedSrc ? (
-            <>
-              <EmbeddedFrame
-                src={embedSrc}
-                title={
-                  presentationLink?.label ?? websiteLink?.label ?? "Embedded project"
-                }
-              />
-              {websiteLink && (
-                <div className="absolute left-3 top-3 z-10 flex items-center gap-3 rounded-full border border-border-warm bg-surface/95 px-3 py-1.5 text-sm font-bold text-text-primary shadow-sm">
-                  <span>Embedded website</span>
-                  <a
-                    href={websiteLink.url ?? "#"}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline underline-offset-2 hover:text-text-secondary"
-                  >
-                    Open site
-                  </a>
-                </div>
-              )}
-            </>
-          ) : cover ? (
-            <Image
-              src={cover}
-              alt=""
-              fill
-              priority
-              className="object-cover"
-              sizes="100vw"
+        {embedSrc && (
+          <div className="relative mt-8 aspect-[16/9] overflow-hidden rounded-2xl border border-border-warm bg-cream">
+            <EmbeddedFrame
+              src={embedSrc}
+              title={
+                presentationLink?.label ?? websiteLink?.label ?? "Embedded project"
+              }
             />
-          ) : (
-            <div
-              className="flex h-full items-center justify-center bg-cream p-8 text-2xl font-extrabold"
-            >
-              {project.title}
-            </div>
-          )}
-        </div>
+            {(websiteLink || pdfEmbed) && (
+              <div className="absolute left-3 top-3 z-10 flex items-center gap-3 rounded-full border border-border-warm bg-surface/95 px-3 py-1.5 text-sm font-bold text-text-primary shadow-sm">
+                <span>{websiteLink ? "Embedded website" : "Embedded PDF"}</span>
+                <a
+                  href={websiteLink?.url ?? pdfUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline underline-offset-2 hover:text-text-secondary"
+                >
+                    {websiteLink ? "Open site" : "Open PDF"}
+                </a>
+              </div>
+            )}
+          </div>
+        )}
       </header>
 
       <section
         aria-label="At a glance"
         className="mx-auto mt-10 max-w-6xl px-5 md:px-8"
       >
-        <div className="grid gap-4 rounded-2xl border border-border-warm bg-surface p-6 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="grid gap-4 rounded-2xl border border-border-warm bg-surface p-6 sm:grid-cols-2 lg:grid-cols-4">
           {[
             ["Role", project.role],
             ["Timeline", project.timeline],
@@ -90,7 +76,7 @@ export async function CaseStudyView({ project }: { project: Project }) {
             ["Tools", project.tools],
             ["Outcome", project.outcome],
           ].map(([label, value]) => (
-            <div key={label}>
+            <div key={label} className={label === "Outcome" ? "lg:col-span-2" : ""}>
               <p className="text-sm font-bold text-text-secondary">{label}</p>
               <p className="mt-1 font-semibold text-text-primary">{value}</p>
             </div>
