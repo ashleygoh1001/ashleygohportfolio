@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { MarkdocContent } from "@/components/MarkdocContent";
 import { getAboutContent } from "@/lib/site";
+import { resolveAboutImage } from "@/lib/images";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -11,15 +12,17 @@ export const metadata: Metadata = {
 
 export default async function AboutPage() {
   const about = await getAboutContent();
+  const photo = resolveAboutImage(about.photo);
+  const lineArtPortrait = resolveAboutImage(about.lineArtPortrait);
 
   return (
     <main id="main-content" className="mx-auto max-w-6xl px-5 py-14 md:px-8 md:py-20">
       <div className="grid gap-10 lg:grid-cols-[280px_1fr]">
         <div className="space-y-6">
-          {about.photo && (
+          {photo && (
             <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-border-warm bg-surface">
               <Image
-                src={about.photo}
+                src={photo}
                 alt="Ashley Goh"
                 fill
                 className="object-cover"
@@ -28,10 +31,10 @@ export default async function AboutPage() {
               />
             </div>
           )}
-          {about.lineArtPortrait && (
+          {lineArtPortrait && (
             <div className="relative aspect-square overflow-hidden rounded-2xl border border-border-warm bg-surface">
               <Image
-                src={about.lineArtPortrait}
+                src={lineArtPortrait}
                 alt="Line art portrait of Ashley Goh"
                 fill
                 className="object-contain p-4"
@@ -39,7 +42,7 @@ export default async function AboutPage() {
               />
             </div>
           )}
-          {!about.photo && !about.lineArtPortrait && (
+          {!photo && !lineArtPortrait && (
             <div className="flex aspect-[4/5] items-center justify-center rounded-2xl border border-dashed border-border-warm bg-surface p-6 text-center text-sm text-text-secondary">
               Add a photo or line-art portrait in Keystatic
             </div>
