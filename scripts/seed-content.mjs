@@ -354,7 +354,7 @@ writeFileSync(
   JSON.stringify({
     thesis: "I design with a keen eye, and I build what I design.",
     intro:
-      "I'm Ashley Goh—a product and UX designer with a computer science background from Dartmouth (CS major, Human-Centered Design minor, Tuck Bridge Program). I work at the intersection of design research, making, and code.",
+      "I'm Ashley Goh—a product and UX designer with a computer science background from Dartmouth (CS major, Human-Centered Design minor). I work at the intersection of design research, making, and code.",
     currently:
       "Automation & IT Risk Analyst at Bank of America · looking for product design roles",
     email: "ashleyqgoh@gmail.com",
@@ -422,7 +422,7 @@ writeFileSync(
         },
       ],
       education:
-        "Dartmouth College — B.A. Computer Science, Minor in Human-Centered Design\nTuck Bridge Program",
+        "Dartmouth College — B.A. Computer Science, Minor in Human-Centered Design",
       skillsUx:
         "Figma, Adobe Creative Suite, user research & synthesis, rapid physical prototyping, generative AI for research / ideation / storytelling",
       skillsTechnical:
