@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ProjectGallery } from "@/components/ProjectGallery";
+import { GoogleSlidesEmbed } from "@/components/GoogleSlidesEmbed";
 import { MarkdocContent } from "@/components/MarkdocContent";
 import { getAdjacentProjects } from "@/lib/projects";
 import { sectionMeta } from "@/lib/theme";
@@ -15,6 +16,12 @@ export async function CaseStudyView({ project }: { project: Project }) {
   const accent = sectionMeta[section].accent;
   const cover = resolveProjectImage(project.coverImage);
   let showDesignBuild = Boolean(project.designAndBuild?.trim());
+  const presentationLink = project.links?.find((link) =>
+    link.url?.includes("docs.google.com/presentation/d/")
+  );
+  const presentationId = presentationLink?.url?.match(
+    /\/presentation\/d\/([^/]+)/
+  )?.[1];
 
   return (
     <article>
@@ -24,7 +31,12 @@ export async function CaseStudyView({ project }: { project: Project }) {
           {project.title}
         </h1>
         <div className="relative mt-8 aspect-[16/9] overflow-hidden rounded-2xl border border-border-warm bg-cream">
-          {cover ? (
+          {presentationId ? (
+            <GoogleSlidesEmbed
+              src={`https://docs.google.com/presentation/d/${presentationId}/embed`}
+              title={presentationLink?.label ?? "Google Slides presentation"}
+            />
+          ) : cover ? (
             <Image
               src={cover}
               alt=""
@@ -35,10 +47,7 @@ export async function CaseStudyView({ project }: { project: Project }) {
             />
           ) : (
             <div
-              className="flex h-full items-center justify-center p-8 text-2xl font-extrabold"
-              style={{
-                backgroundColor: `color-mix(in srgb, ${accent} 30%, white)`,
-              }}
+              className="flex h-full items-center justify-center bg-cream p-8 text-2xl font-extrabold"
             >
               {project.title}
             </div>
@@ -66,17 +75,19 @@ export async function CaseStudyView({ project }: { project: Project }) {
         </div>
       </section>
 
-      <section className="mx-auto mt-14 max-w-6xl px-5 md:px-8">
-        <h2 className="text-2xl font-extrabold text-text-primary">
-          Visual summary
-        </h2>
-        <p className="mt-2 text-text-secondary">
-          Skim the highlights—captions carry the narrative at a glance.
-        </p>
-        <div className="mt-8">
-          <ProjectGallery items={(project.gallery ?? []) as never} />
-        </div>
-      </section>
+      {project.gallery && project.gallery.length > 0 && (
+        <section className="mx-auto mt-14 max-w-6xl px-5 md:px-8">
+          <h2 className="text-2xl font-extrabold text-text-primary">
+            Visual summary
+          </h2>
+          <p className="mt-2 text-text-secondary">
+            Skim the highlights—captions carry the narrative at a glance.
+          </p>
+          <div className="mt-8">
+            <ProjectGallery items={(project.gallery ?? []) as never} />
+          </div>
+        </section>
+      )}
 
       {showDesignBuild && (
         <aside

@@ -32,13 +32,20 @@ export function ProjectCard({
     >
       <div className="relative aspect-[16/10] overflow-hidden bg-cream">
         {cover ? (
-          <Image
-            src={cover}
-            alt=""
-            fill
-            className="object-cover"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          />
+          <>
+            <Image
+              src={cover}
+              alt=""
+              fill
+              className="object-cover brightness-75 transition-[filter] duration-300 group-hover:brightness-90"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-0 opacity-25"
+              style={{ backgroundColor: accent }}
+            />
+          </>
         ) : (
           <div
             className="flex h-full items-center justify-center p-6 text-center text-lg font-extrabold text-text-primary"
